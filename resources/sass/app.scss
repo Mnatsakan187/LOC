@@ -1,0 +1,38 @@
+@import 'variables';
+@import '~bootstrap/scss/bootstrap';
+@import '~sweetalert2/src/sweetalert2';
+@import '~vuetify/dist/vuetify.css';
+@import 'elements/card';
+@import 'elements/navbar';
+@import 'elements/buttons';
+@import 'elements/transitions';
+@import 'elements/footer';
+
+
+body {
+  background-color: white;
+}
+
+.bm-menu {
+  background-color: #eeeeee !important;
+}
+
+.bm-item-list>*>span {
+  color: lightslategrey !important;
+}
+
+.bm-burger-button {
+  position: fixed;
+  width: 26px !important;
+  height: 18px !important;
+  top: 18px !important;
+  cursor: pointer;
+}
+
+footer {
+  position: fixed;
+  bottom:0;
+  width: 500px;
+  left: 50%;
+  margin-left: -250px;
+}

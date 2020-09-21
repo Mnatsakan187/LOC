@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+
+    <!--Font awesome KIT-->
+    <script src="https://kit.fontawesome.com/5a34bc8005.js"></script>
+    <title>LOC</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+          <h2>Create your profile</h2>
+
+          <!-- Steps nav -->
+          <ul class="nav registration-steps">
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span class="step">1</span>
+                My interests
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span class="step active">2</span>
+                My Info
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span class="step">3</span>
+                My Social Media
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row mt-4">
+        <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+          <!--Form begins-->
+          <form class="register-creator-step-2">
+            <!--User name,icon block-->
+            <div class="user-name-icon d-flex align-items-center clearfix">
+              <div class="user-icon">
+                <i class="fas fa-user"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+              <div class="user-name">
+                <div class="form-group">
+                  <label for="userNameSurname" class="sr-only">
+                    User Name Surname
+                  </label>
+                  <input
+                    type="text"
+                    class="form-control-plaintext"
+                    id="userNameSurname"
+                    value="Name Surname"
+                    readonly
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!--User bio textarea-->
+            <div class="user-bio form-group mt-2">
+              <label for="taBio">
+                BIO
+                <span class="gray">(OPTIONAL)</span>
+              </label>
+              <textarea class="form-control" id="taBio" rows="7"></textarea>
+            </div>
+
+            <!--User Birthday block-->
+            <label>DATE OF BIRTH</label>
+            <div class="form-row">
+              <div class="col-3">
+                <label for="bdDate" class="sr-only"></label>
+                <select id="bdDate" class="form-control">
+                  <option selected>Day</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                </select>
+              </div>
+              <div class="col-6">
+                <label for="bdMonth" class="sr-only">Month</label>
+                <select id="bdMonth" class="form-control">
+                  <option selected>Month</option>
+                  <option>January</option>
+                  <option>Febuary</option>
+                  <option>March</option>
+                  <option>April</option>
+                </select>
+              </div>
+              <div class="col-3">
+                <label for="bdYear" class="sr-only">Year</label>
+                <select id="bdYear" class="form-control">
+                  <option selected>Year</option>
+                  <option>1900</option>
+                  <option>1901</option>
+                  <option>1902</option>
+                  <option>1903</option>
+                </select>
+              </div>
+
+              <!-- Add a Profile Cover Block-->
+              <div class="add-profile-cover mt-4">
+                <h5>Add a profile cover</h5>
+                <p>This image will be the cover of your profile</p>
+                <i class="fas fa-camera"></i>
+              </div>
+            </div>
+            <!-- Buttons Block -->
+            <div class="form-buttons mt-4">
+                <a href="register-user-step-b.html" class="btn btn-link">
+                    Cancel
+                </a>
+                <a href="register-user-step-d.html" class="btn btn-primary button-long">
+                    Continue
+                </a>
+            </div>
+          </form>
+          <!--Form ends-->
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

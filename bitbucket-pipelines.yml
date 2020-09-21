@@ -1,0 +1,101 @@
+
+pipelines:
+  branches:
+    develop:
+      - step:
+          name: build
+          image: node:12.15.0
+          script:
+            - npm install
+            - npm run production
+      - step:
+          name: Deploy develop artifact to server
+          script:
+            - apt-get update
+            - apt-get install rsync ssh -y
+            - rsync -vzrS --no-perms --progress --exclude 'authorized_keys' --exclude '.ssh' ./ $SERVER_DEV_USERNAME@$SERVER_IP:$REMOTE_PATH_DEV
+            - ssh $SERVER_DEV_USERNAME@$SERVER_IP cp $REMOTE_PATH_DEV/.env.development $REMOTE_PATH_DEV/.env
+            - ssh $SERVER_DEV_USERNAME@$SERVER_IP composer install
+            - ssh $SERVER_DEV_USERNAME@$SERVER_IP composer dump-autoload
+            - ssh $SERVER_DEV_USERNAME@$SERVER_IP php artisan migrate
+            - ssh $SERVER_DEV_USERNAME@$SERVER_IP php artisan cache:clear
+            - ssh $SERVER_DEV_USERNAME@$SERVER_IP php artisan view:clear
+            - ssh $SERVER_DEV_USERNAME@$SERVER_IP php artisan route:clear
+            - ssh $SERVER_DEV_USERNAME@$SERVER_IP php artisan clear-compiled
+            - ssh $SERVER_DEV_USERNAME@$SERVER_IP php artisan config:cache
+#            - ssh $SERVER_DEV_USERNAME@$SERVER_IP vendor/bin/phpunit
+    test:
+      - step:
+          name: build
+          image: node:12.15.0
+          script:
+          - npm install
+          - npm run production
+      - step:
+          name: Deploy test artifact to server
+          script:
+            - apt-get update
+            - apt-get install rsync ssh -y
+            - rsync -vzrS --no-perms --progress --exclude 'authorized_keys' --exclude '.ssh' ./ $SERVER_TEST_USERNAME@$SERVER_IP:$REMOTE_PATH_TEST
+            - ssh $SERVER_TEST_USERNAME@$SERVER_IP cp $REMOTE_PATH_TEST/.env.test $REMOTE_PATH_TEST/.env
+            - ssh $SERVER_TEST_USERNAME@$SERVER_IP composer install
+            - ssh $SERVER_TEST_USERNAME@$SERVER_IP composer dump-autoload
+            - ssh $SERVER_TEST_USERNAME@$SERVER_IP php artisan migrate
+            - ssh $SERVER_TEST_USERNAME@$SERVER_IP php artisan cache:clear
+            - ssh $SERVER_TEST_USERNAME@$SERVER_IP php artisan view:clear
+            - ssh $SERVER_TEST_USERNAME@$SERVER_IP php artisan route:clear
+            - ssh $SERVER_TEST_USERNAME@$SERVER_IP php artisan clear-compiled
+            - ssh $SERVER_TEST_USERNAME@$SERVER_IP php artisan config:cache
+#            - ssh $SERVER_PROD_USERNAME@$SERVER_IP vendor/bin/phpunit
+    stage:
+      - step:
+          name: build
+          image: node:12.15.0
+          script:
+          - npm install
+          - npm run production
+      - step:
+          name: Deploy stage artifact to server
+          script:
+            - apt-get update
+            - apt-get install rsync ssh -y
+            - rsync -vzrS --no-perms --progress --exclude 'authorized_keys' --exclude '.ssh' ./ $SERVER_STAGE_USERNAME@$SERVER_IP:$REMOTE_PATH_STAGE
+            - ssh $SERVER_STAGE_USERNAME@$SERVER_IP cp $REMOTE_PATH_STAGE/.env.stage $REMOTE_PATH_STAGE/.env
+            - ssh $SERVER_STAGE_USERNAME@$SERVER_IP composer install
+            - ssh $SERVER_STAGE_USERNAME@$SERVER_IP composer dump-autoload
+            - ssh $SERVER_STAGE_USERNAME@$SERVER_IP php artisan migrate
+            - ssh $SERVER_STAGE_USERNAME@$SERVER_IP php artisan cache:clear
+            - ssh $SERVER_STAGE_USERNAME@$SERVER_IP php artisan view:clear
+            - ssh $SERVER_STAGE_USERNAME@$SERVER_IP php artisan route:clear
+            - ssh $SERVER_STAGE_USERNAME@$SERVER_IP php artisan clear-compiled
+            - ssh $SERVER_STAGE_USERNAME@$SERVER_IP php artisan config:cache
+#            - ssh $SERVER_PROD_USERNAME@$SERVER_IP vendor/bin/phpunit
+
+    master:
+      - step:
+          name: build
+          image: node:12.15.0
+          script:
+          - npm install
+          - npm run production
+      - step:
+          name: Deploy master artifact to server
+          script:
+            - apt-get update
+            - apt-get install rsync ssh -y
+            - rsync -vzrS --no-perms --progress --exclude 'authorized_keys' --exclude '.ssh' ./ $SERVER_PROD_USERNAME@$SERVER_IP:$REMOTE_PATH_PROD
+            - ssh $SERVER_PROD_USERNAME@$SERVER_IP cp $REMOTE_PATH_PROD/.env.production $REMOTE_PATH_PROD/.env
+            - ssh $SERVER_PROD_USERNAME@$SERVER_IP composer install
+            - ssh $SERVER_PROD_USERNAME@$SERVER_IP composer dump-autoload
+            - ssh $SERVER_PROD_USERNAME@$SERVER_IP php artisan migrate
+            - ssh $SERVER_PROD_USERNAME@$SERVER_IP php artisan view:clear
+            - ssh $SERVER_PROD_USERNAME@$SERVER_IP php artisan route:clear
+            - ssh $SERVER_PROD_USERNAME@$SERVER_IP php artisan clear-compiled
+            - ssh $SERVER_PROD_USERNAME@$SERVER_IP php artisan config:cache
+            - ssh $SERVER_PROD_USERNAME@$SERVER_IP php artisan cache:clear
+#            - ssh $SERVER_PROD_USERNAME@$SERVER_IP vendor/bin/phpunit
+
+
+
+
+

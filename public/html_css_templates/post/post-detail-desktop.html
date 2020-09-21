@@ -1,0 +1,747 @@
+<!-- This is a template for W.F. 6.6 Mobile and Desktop-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../styles.css" />
+
+  <!--Font awesome KIT-->
+  <script src="https://kit.fontawesome.com/5a34bc8005.js"></script>
+
+  <title>LOC</title>
+</head>
+
+<body>
+  <!--Mobile top  navbar starts-->
+  <div class="mobile-top-navbar d-block d-md-none">
+    <nav class="navbar-mobile navbar navbar-fixed-top navbar-light bg-light">
+      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">
+              <i class="fas fa-envelope"></i>
+              Messages
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="far fa-calendar-alt"></i>
+              Calendar
+            </a>
+          </li>
+          <li class="nav-item mt-3">
+            <a class="nav-link" href="#">
+              <i class="fas fa-chart-line"></i>
+              Analytics
+            </a>
+          </li>
+          <li class="nav-item mt-3">
+            <a class="nav-link" href="#">
+              <i class="fas fa-heart"></i>
+              My favourite content
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fas fa-suitcase"></i>
+              My Network
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fas fa-users"></i>
+              My Groups
+            </a>
+          </li>
+          <li class="nav-item mt-3">
+            <a class="nav-link" href="#">
+              <i class="fas fa-tachometer-alt"></i>
+              Settings
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../my-profiles/my-profiles.html">
+              <i class="fas fa-user"></i>
+              My Profiles
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <!--Mobile top  navbar ends-->
+
+  <!-- Desktop top navbar starts -->
+  <div class="desktop-top-navbar d-none d-md-block">
+    <nav class="navbar-desktop nav fixed-top justify-content-end align-items-center">
+      <a class="nav-link create-button-desktop mr-2" href="#">
+        <i class="fas fa-plus-circle"></i>
+      </a>
+      <a class="nav-link" href="#">
+        <i class="far fa-calendar-alt"></i>
+      </a>
+      <a class="nav-link" href="#">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a class="nav-link" href="#">
+        <i class="fas fa-bell"></i>
+      </a>
+      <div class="desktop-header-dropdown dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          <img src="../images/profile-image.png" alt="default" class="menu-profile-img" /> Paul Smith
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="../my-profiles/my-profiles.html"><i class="fas fa-user"></i> My Profiles</a>
+          <a class="dropdown-item" href="#"><i class="fas fa-tachometer-alt"></i> Settings</a>
+        </div>
+      </div>
+    </nav>
+    <nav class="navbar-primary collapsed">
+      <ul class="navbar-primary-menu">
+        <li>
+          <a href="#" class="btn-expand-collapse">
+            <i class="fas fa-bars"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fas fa-home"></i>
+            <span class="nav-label">HUD</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fas fa-cocktail"></i>
+            <span class="nav-label">Events</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="mt-4">
+            <i class="fas fa-chart-line"></i>
+            <span class="nav-label">Analytics</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fas fa-users"></i>
+            <span class="nav-label">Groups</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fas fa-suitcase"></i>
+            <span class="nav-label">My Network</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="mt-4">
+            <i class="fas fa-heart"></i>
+            <span class="nav-label">My favourite content</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <!-- Desktop top navbar ends -->
+
+
+  <!-- Main content-->
+  <div class="container profile-detail">
+    <div class="row">
+      <!-- Desktop left side creator profile info STARTS -->
+      <div class="col-4">
+        <div class="profile-info d-none d-md-block">
+
+          <!-- Profile name and image -->
+          <div class="profile-image-name d-flex justify-content-start align-items-center">
+            <div class="profile-image">
+              <img src="../images/profile-image.png" />
+            </div>
+            <div class="profile-name">
+              <h4>Paul Smith</h4>
+            </div>
+          </div>
+
+          <!-- Edit profile and followers -->
+          <div class="profile-actions d-flex justify-content-start align-items-center">
+            <a href="#" class="btn edit-my-profile">Edit my profile </a>
+            <span><i class="fas fa-user"></i> 200 Followers</span>
+          </div>
+
+          <!-- Profile bio -->
+          <div class="bio">
+            <span>CREATOR BIO</span>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+              finibus, odio vitae commodo cursus, libero nunc porta dui, eu
+              venenatis turpis justo nec erat. Vestibulum tempus nunc libero,
+              vel placerat orci rhoncus quis. Sed sagittis arcu ut mi
+              condimentum, vel laoreet est elementum. Nullam luctus orci
+              velit, a mattis magna imperdiet a. Nullam imperdiet tellus
+              condimentum, hendrerit elit vitae, volutpat lorem. Donec blandit
+              purus eget risus faucibus, ut feugiat libero condimentum. Nunc
+              et urna sit amet nisi suscipit porttitor.
+            </p>
+          </div>
+
+          <!-- Social media links -->
+          <div class="social-media clearfix">
+            <div class="social-media-icon">
+              <a href="#">
+                <i class="fab fa-soundcloud main-icon"></i>
+              </a>
+            </div>
+
+            <div class="social-media-icon">
+              <a href="#">
+                <i class="fab fa-youtube main-icon"></i>
+              </a>
+            </div>
+            <div class="social-media-icon">
+              <a href="#">
+                <i class="fab fa-vimeo-v main-icon"></i>
+              </a>
+            </div>
+            <div class="social-media-icon">
+              <a href="#">
+                <i class="fas fa-rss-square main-icon"></i>
+              </a>
+            </div>
+            <div class="social-media-icon">
+              <a href="#">
+                <i class="fab fa-linkedin-in main-icon"></i>
+              </a>
+            </div>
+            <div class="social-media-icon">
+              <a href="#">
+                <i class="fab fa-tumblr main-icon"></i>
+              </a>
+            </div>
+            <div class="social-media-icon">
+              <a href="#">
+                <i class="fab fa-twitter main-icon"></i>
+              </a>
+            </div>
+            <div class="social-media-icon">
+              <a href="#">
+                <i class="fab fa-behance main-icon"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Profile teams -->
+          <div class="team">
+            <p>TEAM</p>
+            <div class="team-blocks">
+              <div class="team-block">
+                <a href="#">
+                  <img src="../images/default-placeholder.jpg" class="team-img" />
+                  <div class="team-info">
+                    <span class="team-name">Name</span></br>
+                    <span class="team-role">Manager</span>
+                  </div>
+                </a>
+              </div>
+              <div class="team-block">
+                <a href="#">
+                  <img src="../images/default-placeholder.jpg" class="team-img" />
+                  <div class="team-info">
+                    <span class="team-name">Name</span></br>
+                    <span class="team-role">Booking agent</span>
+                  </div>
+                </a>
+              </div>
+              <div class="team-block">
+                <a href="#">
+                  <img src="../images/default-placeholder.jpg" class="team-img" />
+                  <div class="team-info">
+                    <span class="team-name">Name</span></br>
+                    <span class="team-role">Musician</span>
+                  </div>
+                </a>
+              </div>
+              <div class="team-block">
+                <a href="#">
+                  <img src="../images/default-placeholder.jpg" class="team-img" />
+                  <div class="team-info">
+                    <span class="team-name">Name</span></br>
+                    <span class="team-role">Visual artist</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Desktop left side creator profile info ENDS-->
+
+      <!--Desktop right side or mobile main content STARTS -->
+      <div class="col-sm-12 col-md-8">
+        <div class="profile-content">
+
+          <!-- DESKTOP Profile content header: buttons and cover image -->
+          <div class="profile-desktop-header d-none d-md-block">
+            <div class="buttons-block mb-3">
+              <a href="#" class="btn btn-profile active">Feed</a>
+              <a href="profile-detail-creator-projects.html" class="btn btn-profile">Projects</a>
+            </div>
+            <div class="cover-image-block text-center">
+              <img src="../images/cover-image.png" class="cover-image">
+            </div>
+          </div>
+          <!-- MOBILE Profile content header: buttons and cover image -->
+          <div class="profile-mobile-header d-block d-md-none">
+            <div class="cover-image-block">
+              <div class="profile-image-name d-flex justify-content-start align-items-center">
+                <div class="profile-image">
+                  <img src="../images/profile-image.png" />
+                </div>
+                <div class="profile-name">
+                  <h4>Paul Smith</h4>
+                  <span>Visual Artist</span>
+                </div>
+              </div>
+              <img src="../images/cover-image-mobile.jpeg" class="cover-image">
+              <a href="#" class="btn edit-my-profile">Edit my profile</a>
+            </div>
+            <div class="buttons-followers-block mt-3 d-flex justify-content-between align-items-center">
+              <div class="buttons-block">
+                <a href="#" class="btn btn-profile" data-toggle="modal" data-target="#modalInfo">Info</a>
+                <a href="profile-detail-creator-projects.html" class="btn btn-profile">Projects</a>
+                <a href="#" class="btn btn-profile" data-toggle="modal" data-target="#modalTeam">TEAM</a>
+              </div>
+              <span class="float-right"><i class="fas fa-user"></i> 200 Followers</span>
+            </div>
+            <div class="profile-feed-divider"></div>
+          </div>
+
+          <!-- Profile feed -->
+          <div class="profile-content-feed mt-4">
+
+            <!-- Example of project -->
+            <div class="profile-project">
+              <div class="top clearfix">
+                <h4>The Sea</h4>
+                <span class="date">MAY 22</span>
+                <div class="dropdown edit-content float-right">
+                  <button class="btn dropdown-toggle" type="button" id="dropdownProject" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-ellipsis-h"></i>
+                  </button>
+                  <div class="dropdown-menu  dropdown-menu-right" aria-labelledby="dropdownProject">
+                    <a class="dropdown-item" href="#">Edit</a>
+                    <a class="dropdown-item" href="#">Delete</a>
+                  </div>
+                </div>
+              </div>
+              <div class="carrousel-holder">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img class="d-block w-100" src="../images/slide1.jpg" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="../images/slide2.jpg" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="../images/slide3.jpg" alt="Third slide">
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+              </div>
+              <div class="text-block mt-4">
+                <p>
+                  This is my last project. orem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                  finibus, odio vitae commodo cursus.
+                </p>
+              </div>
+              <div class="action-block clearfix">
+                <div class="action-status float-left align-items-center">
+                  <span class="type-circle">A</span>
+                  <i class="fas fa-heart"></i> <span class="number likes">250</span>
+                  <i class="fas fa-comment"></i> <span class="number comments">8</span>
+                  <i class="fas fa-share"></i> <span class="number shares">5</span>
+                </div>
+                <div class="action-buttons float-right">
+                  <a href="#"><i class="far fa-heart"></i></a>
+                  <a href="#"><i class="fas fa-comment"></i></a>
+                  <a href="#"><i class="fas fa-share"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="profile-feed-divider"></div>
+
+            <!-- Example of post -->
+            <div class="profile-post">
+              <div class="top clearfix">
+                <span class="date">MARCH 22</span>
+                <div class="dropdown edit-content float-right">
+                  <button class="btn dropdown-toggle" type="button" id="dropdownPost" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-ellipsis-h"></i>
+                  </button>
+                  <div class="dropdown-menu  dropdown-menu-right" aria-labelledby="dropdownPost">
+                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#postDetailModal">View</a>
+                    <a class="dropdown-item" href="#">Edit</a>
+                    <a class="dropdown-item" href="#">Delete</a>
+                  </div>
+                </div>
+              </div>
+              <div class="text-block">
+                <p>
+                  Hi guys! I am so busy working on my last project. Will share with all of you soon.
+                </p>
+              </div>
+              <div class="action-block clearfix">
+                <div class="action-status float-left align-items-center">
+                  <span class="type-circle">A</span>
+                  <i class="fas fa-heart"></i> <span class="number likes">250</span>
+                  <i class="fas fa-comment"></i> <span class="number comments">8</span>
+                  <i class="fas fa-share"></i> <span class="number shares">5</span>
+                </div>
+                <div class="action-buttons float-right">
+                  <a href="#"><i class="far fa-heart"></i></a>
+                  <a href="#"><i class="fas fa-comment"></i></a>
+                  <a href="#"><i class="fas fa-share"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="profile-feed-divider"></div>
+
+            <!-- Example of post with image -->
+            <div class="profile-post">
+              <div class="top clearfix">
+                <span class="date">MARCH 1</span>
+                <div class="dropdown edit-content float-right">
+                  <button class="btn dropdown-toggle" type="button" id="dropdownPostImage" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-ellipsis-h"></i>
+                  </button>
+                  <div class="dropdown-menu  dropdown-menu-right" aria-labelledby="dropdownPostImage">
+                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#postImageDetailModal">View</a>
+                    <a class="dropdown-item" href="#">Edit</a>
+                    <a class="dropdown-item" href="#">Delete</a>
+                  </div>
+                </div>
+              </div>
+              <div class="image-holder">
+                <img src="../images/post-image.jpg" />
+              </div>
+              <div class="text-block">
+                <p>
+                  At the sea.
+                </p>
+              </div>
+              <div class="action-block clearfix">
+                <div class="action-status float-left align-items-center">
+                  <span class="type-circle">A</span>
+                  <i class="fas fa-heart"></i> <span class="number likes">250</span>
+                  <i class="fas fa-comment"></i> <span class="number comments">8</span>
+                  <i class="fas fa-share"></i> <span class="number shares">5</span>
+                </div>
+                <div class="action-buttons float-right">
+                  <a href="#"><i class="far fa-heart"></i></a>
+                  <a href="#"><i class="fas fa-comment"></i></a>
+                  <a href="#"><i class="fas fa-share"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="profile-feed-divider"></div>
+
+            <!-- Example of event -->
+            <div class="profile-event">
+              <div class="top clearfix">
+                <h4>Name of event</h4>
+                <span class="date">March 1</span>
+                <div class="dropdown edit-content float-right">
+                  <button class="btn dropdown-toggle" type="button" id="dropdownProject" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-ellipsis-h"></i>
+                  </button>
+                  <div class="dropdown-menu  dropdown-menu-right" aria-labelledby="dropdownProject">
+                    <a class="dropdown-item" href="#">Edit</a>
+                    <a class="dropdown-item" href="#">Delete</a>
+                  </div>
+                </div>
+              </div>
+              <div class="event-info-poster d-flex justify-content-between">
+                <div class="event-info">
+                  <p>Concert</p>
+                  <p>City and date</p>
+
+                  <p>Venue</p>
+                  <p>$20</p>
+                </div>
+                <div class="event-poster">
+                  <img src="../images/event_poster.png" />
+                </div>
+              </div>
+              <div class="event-description mt-3">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In aliquam metus lectus, id dignissim arcu
+                  lacinia non. Aliquam in tellus eu justo posuere efficitur.
+                  Pellentesque sed lacus a quam pharetra cursus vitae sit amet nisi. </p>
+              </div>
+              <div class="action-block clearfix">
+                <div class="action-status float-left align-items-center">
+                  <span class="type-circle">A</span>
+                  <i class="fas fa-heart"></i> <span class="number likes">250</span>
+                  <i class="fas fa-comment"></i> <span class="number comments">8</span>
+                  <i class="fas fa-share"></i> <span class="number shares">5</span>
+                </div>
+                <div class="action-buttons float-right">
+                  <a href="#"><i class="far fa-heart"></i></a>
+                  <a href="#"><i class="fas fa-comment"></i></a>
+                  <a href="#"><i class="fas fa-share"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Desktop right side or mobile main content ENDS -->
+
+      <!-- Mobile footer -->
+      <nav class="footer-nav nav fixed-bottom d-flex justify-content-between align-items-center d-block d-md-none">
+        <a class="nav-link active" href="#">
+          <i class="fas fa-home"></i>
+        </a>
+        <a class="nav-link" href="#">
+          <i class="fas fa-search"></i>
+        </a>
+        <a class="nav-link create-button-mobile" href="#">
+          <i class="fas fa-plus-circle"></i>
+        </a>
+        <a class="nav-link" href="#">
+          <i class="fas fa-cocktail"></i>
+        </a>
+        <a class="nav-link" href="#">
+          <i class="fas fa-bell"></i>
+        </a>
+      </nav>
+      <!-- Mobile footer ends-->
+
+      <!-- Info Modal Dialog W.F. 5.9 -->
+      <div class="modal fade" id="modalInfo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1>Creator Name</h1>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body profile-info">
+              <div class="bio">
+                <span>CREATOR BIO</span>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                  finibus, odio vitae commodo cursus, libero nunc porta dui, eu
+                  venenatis turpis justo nec erat. Vestibulum tempus nunc libero,
+                  vel placerat orci rhoncus quis. Sed sagittis arcu ut mi
+                  condimentum, vel laoreet est elementum. Nullam luctus orci
+                  velit, a mattis magna imperdiet a. Nullam imperdiet tellus
+                  condimentum, hendrerit elit vitae, volutpat lorem. Donec blandit
+                  purus eget risus faucibus, ut feugiat libero condimentum. Nunc
+                  et urna sit amet nisi suscipit porttitor.
+                </p>
+              </div>
+
+              <!-- Social media links -->
+              <div class="social-media clearfix">
+                <div class="social-media-icon">
+                  <a href="#">
+                    <i class="fab fa-soundcloud main-icon"></i>
+                  </a>
+                </div>
+
+                <div class="social-media-icon">
+                  <a href="#">
+                    <i class="fab fa-youtube main-icon"></i>
+                  </a>
+                </div>
+                <div class="social-media-icon">
+                  <a href="#">
+                    <i class="fab fa-vimeo-v main-icon"></i>
+                  </a>
+                </div>
+                <div class="social-media-icon">
+                  <a href="#">
+                    <i class="fas fa-rss-square main-icon"></i>
+                  </a>
+                </div>
+                <div class="social-media-icon">
+                  <a href="#">
+                    <i class="fab fa-linkedin-in main-icon"></i>
+                  </a>
+                </div>
+                <div class="social-media-icon">
+                  <a href="#">
+                    <i class="fab fa-tumblr main-icon"></i>
+                  </a>
+                </div>
+                <div class="social-media-icon">
+                  <a href="#">
+                    <i class="fab fa-twitter main-icon"></i>
+                  </a>
+                </div>
+                <div class="social-media-icon">
+                  <a href="#">
+                    <i class="fab fa-behance main-icon"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Post with image detail modal -->
+      <div class="modal fade" id="postImageDetailModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+
+              <!-- Post's info -->
+              <div class="post-info">
+                <h1>Name of post</h1>
+                <p>By Name of Creator</p>
+                <span class="date"> MAY 22</span>
+              </div>
+
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+
+            </div>
+
+            <div class="modal-body post-detail">
+
+              <!-- Post's image -->
+              <div class="post-cover-holder">
+                <img src="../images/post-image.jpg" />
+              </div>
+
+              <!-- Post's text -->
+              <div class="post-text mt-3">
+                Ipsum do nostrud dolore ad duis tempor ullamco quis officia officia veniam consectetur.
+                Eiusmod id anim dolor cillum ut. Nisi elit amet aliqua veniam amet.
+              </div>
+
+              <!-- Post's action buttons -->
+              <div class="action-block clearfix mt-3">
+                <div class="action-status float-left align-items-center">
+                  <span class="type-circle">A</span>
+                  <i class="fas fa-heart"></i> <span class="number likes">250</span>
+                  <i class="fas fa-comment"></i> <span class="number comments">8</span>
+                  <i class="fas fa-share"></i> <span class="number shares">5</span>
+                </div>
+                <div class="action-buttons float-right">
+                  <a href="#"><i class="far fa-heart"></i></a>
+                  <a href="#"><i class="fas fa-comment"></i></a>
+                  <a href="#"><i class="fas fa-share"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Post detail modal -->
+      <div class="modal fade" id="postDetailModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+
+              <!-- Post's info -->
+              <div class="post-info">
+                <h1>Name of post</h1>
+                <p>By Name of Creator</p>
+                <span class="date"> MAY 22</span>
+              </div>
+
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+
+            </div>
+
+            <div class="modal-body post-detail">
+
+              <!-- Post's text -->
+              <div class="post-text mt-3">
+                Ipsum do nostrud dolore ad duis tempor ullamco quis officia officia veniam consectetur.
+                Eiusmod id anim dolor cillum ut. Nisi elit amet aliqua veniam amet.
+              </div>
+
+              <!-- Post's action buttons -->
+              <div class="action-block clearfix mt-3">
+                <div class="action-status float-left align-items-center">
+                  <span class="type-circle">A</span>
+                  <i class="fas fa-heart"></i> <span class="number likes">250</span>
+                  <i class="fas fa-comment"></i> <span class="number comments">8</span>
+                  <i class="fas fa-share"></i> <span class="number shares">5</span>
+                </div>
+                <div class="action-buttons float-right">
+                  <a href="#"><i class="far fa-heart"></i></a>
+                  <a href="#"><i class="fas fa-comment"></i></a>
+                  <a href="#"><i class="fas fa-share"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+      </script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+      </script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+      </script>
+
+      <script>
+        $(document).ready(function () {
+          /* Desktop slider menu event */
+          $('.btn-expand-collapse').click(function (e) {
+            $('.navbar-primary').toggleClass('collapsed');
+          });
+        });
+
+      </script>
+</body>
+
+</html>

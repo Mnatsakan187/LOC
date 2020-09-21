@@ -1,0 +1,429 @@
+<!-- This is a template for W.F. 4.2.1Mobile and Desktop-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+
+    <!--Font awesome KIT-->
+    <script src="https://kit.fontawesome.com/5a34bc8005.js"></script>
+
+    <title>LOC</title>
+  </head>
+  <body>
+    <!--Mobile top  navbar starts-->
+    <div class="mobile-top-navbar d-block d-md-none">
+        <nav class="navbar-mobile navbar navbar-fixed-top navbar-light bg-light">
+            <button
+              class="navbar-toggler ml-auto"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle menu"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">
+                    <i class="fas fa-envelope"></i>
+                    Messages
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <i class="far fa-calendar-alt"></i>
+                    Calendar
+                  </a>
+                </li>
+                <li class="nav-item mt-3">
+                  <a class="nav-link" href="#">
+                    <i class="fas fa-chart-line"></i>
+                    Analytics
+                  </a>
+                </li>
+                <li class="nav-item mt-3">
+                  <a class="nav-link" href="#">
+                    <i class="fas fa-heart"></i>
+                     My favourite content
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <i class="fas fa-suitcase"></i>
+                    My Network
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <i class="fas fa-users"></i>
+                    My Groups
+                  </a>
+                </li>
+                <li class="nav-item mt-3">
+                  <a class="nav-link" href="#">
+                    <i class="fas fa-tachometer-alt"></i>
+                    Settings
+                  </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../my-profiles/my-profiles.html">
+                      <i class="fas fa-user"></i>
+                      My Profiles
+                    </a>
+                  </li>
+              </ul>
+            </div>
+          </nav>
+    </div>
+    <!--Mobile top  navbar ends-->
+
+    <!-- Desktop top navbar starts -->
+    <div class="desktop-top-navbar d-none d-md-block">
+      <nav class="navbar-desktop nav fixed-top justify-content-end align-items-center">
+        <a
+          class="nav-link create-button-desktop mr-2"
+          href="#">
+          <i class="fas fa-plus-circle"></i>
+        </a>
+        <a class="nav-link" href="#">
+          <i class="far fa-calendar-alt"></i>
+        </a>
+        <a class="nav-link" href="#">
+            <i class="fas fa-envelope"></i>
+        </a>
+        <a class="nav-link" href="#">
+          <i class="fas fa-bell"></i>
+        </a>
+        <div class="desktop-header-dropdown dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <img src="../images/profile-image.png" alt="default" class="menu-profile-img"/> Paul Smith
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="../my-profiles/my-profiles.html"><i class="fas fa-user"></i> My Profiles</a>
+            <a class="dropdown-item" href="#"><i class="fas fa-tachometer-alt"></i> Settings</a>
+          </div>
+        </div>
+      </nav>
+      <nav class="navbar-primary collapsed">
+        <ul class="navbar-primary-menu">
+          <li>
+            <a href="#" class="btn-expand-collapse">
+              <i class="fas fa-bars"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-home"></i> 
+              <span class="nav-label">HUD</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-cocktail"></i> 
+              <span class="nav-label">Events</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="mt-4">
+              <i class="fas fa-chart-line"></i> 
+              <span class="nav-label">Analytics</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-users"></i> 
+              <span class="nav-label">Groups</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-suitcase"></i> 
+              <span class="nav-label">My Network</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="mt-4">
+              <i class="fas fa-heart"></i> 
+              <span class="nav-label">My favourite content</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- Desktop top navbar ends -->
+    
+
+    <!-- Main content-->
+    <div class="container profile-detail">
+        <div class="row">
+          <!-- Desktop left side user profile info STARTS --> 
+          <div class="col-4">
+            <div class="profile-info d-none d-md-block">
+  
+              <!-- Profile name and image -->
+              <div class="profile-image-name d-flex justify-content-start align-items-center">
+                <div class="profile-image">
+                  <img src="../images/profile-image.png" />
+                </div>
+                <div class="profile-name">
+                  <h4>Paul Smith</h4>
+                </div>
+              </div>
+  
+              <!-- Edit profile and followers -->
+              <div class="profile-actions d-flex justify-content-start align-items-center">
+                <a href="#" class="btn edit-my-profile">Edit my profile </a>
+                <span><i class="fas fa-user"></i> 200 Friends</span>
+              </div>
+  
+              <!-- Profile bio -->
+              <div class="bio">
+                <span>USER BIO</span>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                  finibus, odio vitae commodo cursus, libero nunc porta dui, eu
+                  venenatis turpis justo nec erat. Vestibulum tempus nunc libero,
+                  vel placerat orci rhoncus quis. Sed sagittis arcu ut mi
+                  condimentum, vel laoreet est elementum. Nullam luctus orci
+                  velit, a mattis magna imperdiet a. Nullam imperdiet tellus
+                  condimentum, hendrerit elit vitae, volutpat lorem. Donec blandit
+                  purus eget risus faucibus, ut feugiat libero condimentum. Nunc
+                  et urna sit amet nisi suscipit porttitor.
+                </p>
+              </div>
+  
+              <!-- Social media links -->
+              <div class="social-media clearfix">
+                  <div class="social-media-icon">
+                    <a href="#">
+                      <i class="fab fa-soundcloud main-icon"></i>
+                    </a>
+                  </div>
+  
+                  <div class="social-media-icon">
+                    <a href="#">
+                      <i class="fab fa-youtube main-icon"></i>
+                    </a>
+                  </div>
+                  <div class="social-media-icon">
+                    <a href="#">
+                      <i class="fab fa-vimeo-v main-icon"></i>
+                    </a>
+                  </div>
+                  <div class="social-media-icon">
+                    <a href="#">
+                      <i class="fas fa-rss-square main-icon"></i>
+                    </a>
+                  </div>
+                  <div class="social-media-icon">
+                    <a href="#">
+                      <i class="fab fa-linkedin-in main-icon"></i>
+                    </a>
+                  </div>
+                  <div class="social-media-icon">
+                    <a href="#">
+                      <i class="fab fa-tumblr main-icon"></i>
+                    </a>
+                  </div>
+                  <div class="social-media-icon">
+                    <a href="#">
+                      <i class="fab fa-twitter main-icon"></i>
+                    </a>
+                  </div>
+                  <div class="social-media-icon">
+                    <a href="#">
+                      <i class="fab fa-behance main-icon"></i>
+                    </a>
+                  </div>
+              </div>
+          </div>
+          </div>
+           <!--Desktop left side user profile info ENDS--> 
+  
+          <!--Desktop right side or mobile main content STARTS --> 
+          <div class="col-sm-12 col-md-8">
+            <div class="profile-content">
+  
+                <!-- DESKTOP Profile content header: buttons and cover image -->
+                <div class="profile-desktop-header d-none d-md-block">
+                      <div class="cover-image-block text-center">
+                          <img src="../images/cover-image.png" class="cover-image">
+                      </div>
+                </div>
+                <!-- MOBILE Profile content header: buttons and cover image -->
+                <div class="profile-mobile-header d-block d-md-none">
+                    <div class="cover-image-block">
+                        <div class="profile-image-name d-flex justify-content-start align-items-center">
+                          <div class="profile-image">
+                            <img src="../images/profile-image.png" />
+                          </div>
+                          <div class="profile-name">
+                            <h4>Paul Smith</h4>
+                          </div>
+                        </div>
+                        <img src="../images/cover-image-mobile.jpeg" class="cover-image">
+                        <a href="#" class="btn edit-my-profile">Edit my profile</a>
+                    </div>
+                    <div class="buttons-followers-block mt-3 d-flex justify-content-between align-items-center">
+                        <div class="buttons-block">
+                            <a href="#" class="btn btn-profile" data-toggle="modal" data-target="#exampleModal">Info</a>
+                        </div>
+                        <span class="float-right"><i class="fas fa-user"></i> 200 Friends</span>
+                    </div>
+                    <div class="profile-feed-divider"></div>
+                </div>
+  
+                <!-- Profile feed -->
+                <div class="profile-content-feed first-use text-center mt-4">
+                        <h4>Your feed is empty</h4>
+                        <h6>Create your first post or project to give your fans something to explore.</h6>
+                        <div class="buttons-block">
+                            <a href="#" class="btn btn-profile-link">Add first Post</a> 
+                        </div> 
+                </div>
+            </div>
+          <!--Desktop right side or mobile main content ENDS --> 
+
+    <!-- Mobile footer -->
+    <nav class="footer-nav nav fixed-bottom d-flex justify-content-between align-items-center d-block d-md-none">
+      <a class="nav-link active" href="#">
+        <i class="fas fa-home"></i>
+      </a>
+      <a class="nav-link" href="#">
+        <i class="fas fa-search"></i>
+      </a>
+      <a
+        class="nav-link create-button-mobile"
+        href="#"
+      >
+        <i class="fas fa-plus-circle"></i>
+      </a>
+      <a class="nav-link" href="#">
+        <i class="fas fa-cocktail"></i>
+      </a>
+      <a class="nav-link" href="#">
+        <i class="fas fa-bell"></i>
+      </a>
+    </nav>
+    <!-- Mobile footer ends-->
+
+    <!-- Info Modal Dialog -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1>USER NAME</h1>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body profile-info">
+                <div class="bio">
+                    <span>USER BIO</span>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                      finibus, odio vitae commodo cursus, libero nunc porta dui, eu
+                      venenatis turpis justo nec erat. Vestibulum tempus nunc libero,
+                      vel placerat orci rhoncus quis. Sed sagittis arcu ut mi
+                      condimentum, vel laoreet est elementum. Nullam luctus orci
+                      velit, a mattis magna imperdiet a. Nullam imperdiet tellus
+                      condimentum, hendrerit elit vitae, volutpat lorem. Donec blandit
+                      purus eget risus faucibus, ut feugiat libero condimentum. Nunc
+                      et urna sit amet nisi suscipit porttitor.
+                    </p>
+                  </div>
+
+               <!-- Social media links -->
+               <div class="social-media clearfix">
+                  <div class="social-media-icon">
+                    <a href="#">
+                      <i class="fab fa-soundcloud main-icon"></i>
+                    </a>
+                  </div>
+  
+                  <div class="social-media-icon">
+                    <a href="#">
+                      <i class="fab fa-youtube main-icon"></i>
+                    </a>
+                  </div>
+                  <div class="social-media-icon">
+                    <a href="#">
+                      <i class="fab fa-vimeo-v main-icon"></i>
+                    </a>
+                  </div>
+                  <div class="social-media-icon">
+                    <a href="#">
+                      <i class="fas fa-rss-square main-icon"></i>
+                    </a>
+                  </div>
+                  <div class="social-media-icon">
+                    <a href="#">
+                      <i class="fab fa-linkedin-in main-icon"></i>
+                    </a>
+                  </div>
+                  <div class="social-media-icon">
+                    <a href="#">
+                      <i class="fab fa-tumblr main-icon"></i>
+                    </a>
+                  </div>
+                  <div class="social-media-icon">
+                    <a href="#">
+                      <i class="fab fa-twitter main-icon"></i>
+                    </a>
+                  </div>
+                  <div class="social-media-icon">
+                    <a href="#">
+                      <i class="fab fa-behance main-icon"></i>
+                    </a>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      
+      
+      $(document).ready(function(){ 
+        /* Desktop slider menu event */
+        $('.btn-expand-collapse').click(function(e) {
+            $('.navbar-primary').toggleClass('collapsed');
+        });
+      });
+    </script>
+  </body>
+</html>
+
+

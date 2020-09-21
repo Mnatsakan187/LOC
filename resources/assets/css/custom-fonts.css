@@ -1,0 +1,92 @@
+/* LOC icon font */
+@font-face {
+    font-family: 'loc';
+    src: url('fonts/loc icon font/loc.eot?sa97jw');
+    src: url('fonts/loc icon font/loc.eot?sa97jw#iefix') format('embedded-opentype'),
+        url('fonts/loc icon font/loc.ttf?sa97jw') format('truetype'),
+        url('fonts/loc icon font/loc.woff?sa97jw') format('woff'),
+        url('fonts/loc icon font/loc.svg?sa97jw#loc') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+i.loc-icon {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'loc' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    display: inline-block;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.loc-create:before {
+    content: "\e903";
+}
+
+.loc-notification:before {
+    content: "\e906";
+}
+
+.loc-event:before {
+    content: "\e900";
+}
+
+.loc-hamburger:before {
+    content: "\e901";
+}
+
+.loc-home:before {
+    content: "\e902";
+}
+
+.loc-profile:before {
+    content: "\e904";
+}
+
+.loc-search:before {
+    content: "\e905";
+}
+
+/*  LOC text font */
+@font-face {
+    font-family: 'EncodeSansLight';
+    src: url('fonts/encode font/EncodeSans-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'EncodeSansMedium';
+    src: url('fonts/encode font/EncodeSans-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'EncodeSansRegular';
+    src: url('fonts/encode font/EncodeSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'EncodeSansSemiBold';
+    src: url('fonts/encode font/EncodeSans-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'EncodeSansBold';
+    src: url('fonts/encode font/EncodeSans-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

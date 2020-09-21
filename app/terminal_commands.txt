@@ -1,0 +1,34 @@
+
+Terminal commands
+
+******* Setup php
+php artisan serve --p 8000
+ngrok http localhost:8000 --subdomain=ob1-josh-rw3
+
+****** To kill port
+sudo lsof -i tcp:3000
+sudo kill -9 PID
+
+****** Front end setup
+
+***** Vue
+ npm install
+ npm run watch (Only has to be ran to see changes as they are done on local)
+ npm run prod
+
+****** Vue unit test
+npm install --save-dev @vue/test-utils
+npm install --save-dev jsdom jsdom-global
+
+
+****** API documentation setup
+php artisan l5-swagger:generate
+url: https://ob1-josh-rw3.ngrok.io/api/documentation
+
+*** Run unit tests
+vendor/bin/phpunit
+
+
+
+
+

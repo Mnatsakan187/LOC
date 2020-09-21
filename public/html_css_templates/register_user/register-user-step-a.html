@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/html_css_templates/styles.css" />
+
+    <!--Font awesome KIT-->
+    <script src="https://kit.fontawesome.com/5a34bc8005.js"></script>
+    <title>LOC</title>
+  </head>
+  <body>
+    <!--Header Nav For Desktop-->
+    <div class="container d-none d-md-block">
+      <div class="row">
+        <div class="col">
+          <ul class="nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Log In</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col-12 col-md-6 offset-md-3">
+          <h2>Welcome to LOC</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean erat
+            risus, iaculis sit amet auctor in, vestibulum sit amet dolor.
+            Vestibulum hendrerit eros sit amet pretium faucibus.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-6 offset-md-3">
+          <h4>Create your account</h4>
+
+          <!--Register User Form Begins-->
+          <form class="register-user-step-a" onsubmit="return false" novalidate>
+
+            <!-- Enter Preferred Pronoun Input -->
+            <div class="form-group">
+              <label for="preferredPronoun">Preferred Pronoun</label>
+              <input
+                type="text"
+                class="form-control"
+                id="preferredPronoun"
+                placeholder="Enter preferred pronoun"
+                required
+              />
+              <div class="invalid-feedback">
+                Please enter preferred pronoun.
+              </div>
+            </div>
+
+            <!-- Enter First Name Input -->
+            <div class="form-group">
+              <label for="firstName">First Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="firstName"
+                placeholder="Enter first name"
+                required
+              />
+              <div class="invalid-feedback">
+                Please enter first name.
+              </div>
+            </div>
+
+            <!-- Enter Last Name Input -->
+            <div class="form-group">
+              <label for="lastName">Last Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="lastName"
+                placeholder="Enter last name"
+                required
+              />
+              <div class="invalid-feedback">
+                Please enter last name.
+              </div>
+            </div>
+
+            <!-- Enter Email or Phone Number Input -->
+            <div class="form-group">
+              <label for="emailPhone">Email or Phone Number</label>
+              <input
+                type="text"
+                class="form-control"
+                id="emailPhone"
+                placeholder="Enter email or phone number"
+                required
+              />
+              <div class="invalid-feedback">
+                Please enter email or phone number.
+              </div>
+            </div>
+
+            <!-- Enter Password Input -->
+            <div class="form-group mt-4">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                class="form-control"
+                id="password"
+                placeholder="Enter password"
+                required
+              />
+              <div class="invalid-feedback">
+                Please enter password.
+              </div>
+            </div>
+
+            <!-- Repeat Password Input -->
+            <div class="form-group">
+              <label for="repeatPassword">Repeat Password</label>
+              <input
+                type="password"
+                class="form-control"
+                id="repeatPassword"
+                placeholder="Repeat Password"
+                required
+              />
+              <div class="invalid-feedback">
+                Please repeat password.
+              </div>
+            </div>
+
+            <!--Checkbox Terms and Conditions-->
+            <div class="form-group form-check">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="cbTermsAndConditions"
+                required
+              />
+              <label class="form-check-label" for="cbTermsAndConditions">
+                I agree with Terms &amp; Conditions
+              </label>
+              <div class="invalid-feedback">
+                You must agree before submitting.
+              </div>
+            </div>
+
+            <!--Submit and cancel buttons block-->
+            <a href="register-user-step-b.html" class="btn btn-primary btn-lg btn-block mt-4">
+              Create account
+            </a>
+            <div class="text-center mt-3 d-block d-md-none">
+              <a href="#">Log In</a>
+            </div>
+          </form>
+          <!--Register User Form Ends-->
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

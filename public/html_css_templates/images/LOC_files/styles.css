@@ -1,0 +1,359 @@
+/* Home page styles */
+.register-creator {
+    border-bottom: 1px solid #000;
+}
+
+.wave-circle {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    color: #fff;
+    width: 70px;
+    height: 70px;
+    border: 2px solid #787878;
+    border-radius: 50%;
+    background-color: #A5A5A5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-examples {
+    color: #848484;
+    text-align: center;
+}
+
+.features p {
+    overflow: hidden;
+}
+
+.features .more-info {
+    min-width: 70%;
+}
+
+.feature-image {
+    float: left;
+    width: 150px;
+    height: 150px;
+    margin-right: 10px;
+}
+
+/* Registration styles */
+
+/* Registration steps nav */
+.registration-steps {
+    margin-left: -1rem;
+}
+
+.registration-steps span.step {
+    background: #999;
+    border-radius: 50%;
+    color: #fff;
+    display: inline-block;
+    margin-right: 5px;
+    text-align: center;
+    width: 1.6em;
+}
+
+.registration-steps span.step.active {
+    background: #0099CC;
+}
+
+.registration-steps .nav-item a {
+    color: #000;
+    font-size: 0.8rem;
+}
+
+/* Registration user name and user icon */
+.user-name-icon {
+    position: relative;
+}
+
+.user-name-icon i.fa-user {
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 50%;
+    border: 2px solid #BFBFBF;
+    padding: 0.2em 0.3em;
+    color: #ccc;
+    font-size: 5rem;
+}
+
+.user-name-icon i.fa-plus {
+    cursor: pointer;
+    position: absolute;
+    top: 85px;
+    left: 5px;
+    color: #0099CC;
+    font-size: 2.5rem;
+}
+
+.user-name-icon .user-name {
+    float: left;
+    width: 70%
+}
+
+.user-name-icon .user-icon {
+    float: left;
+    width: 30%
+}
+
+.user-name-icon .form-control-plaintext {
+    display: block;
+    width: 100%;
+    height: calc(1.1em + 2px);
+    padding: .375rem .75rem;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.user-bio .gray {
+    color: #999;
+}
+
+.add-profile-cover {
+    cursor: pointer;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    padding: 20px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.add-profile-cover i.fa-camera {
+    color: #ccc;
+    font-size: 3rem;
+}
+
+.register-creator-step-2 .button-continue {
+    width: 70%;
+}
+
+/* Social media icons styles */
+.social-media-row {
+    width: 100%;
+    padding: 20px;
+}
+
+.social-media-icon {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    position: relative;
+}
+
+.social-media-icon .main-icon {
+    color: #999;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.social-media-icon .fa-plus-circle {
+    color: #0099CC;
+    position: absolute;
+    top: 23px;
+    right: 2px;
+    cursor: pointer;
+}
+
+.social-media-icon.added .main-icon {
+    color: #801780;
+}
+
+.social-media-icon.added .fa-plus-circle {
+    display: none;
+}
+
+.button-long {
+    width: 70%;
+}
+
+/* Content boxes styles */
+
+.content-box {
+    cursor: pointer;
+    width: 180px;
+    height: 130px;
+    position: relative;
+    float: left;
+    text-align: center;
+    margin: 10px 10px 10px 0px;
+    padding: 10px;
+    background-color: #F2F2F2;
+}
+
+.content-box .far.fa-heart {
+    position: absolute;
+    top: 100px;
+    right: 10px;
+    font-size: 1.2rem;
+    color: #AEAEAE;
+}
+
+.content-box .fas.fa-heart {
+    position: absolute;
+    top: 100px;
+    right: 10px;
+    font-size: 1.3rem;
+    color: red;
+    display: none;
+}
+
+.content-box.selected .far.fa-heart {
+    display: none;
+}
+
+.content-box.selected .fas.fa-heart {
+    display: block;
+}
+
+/* Registration styles ends */
+
+/* Welcome page */
+
+.button-explore {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/* Header and footer styles */
+
+/* Footer nav for mobile devices */
+
+.footer-nav i {
+    color: #949494;
+    font-size: 1.5rem;
+}
+
+.footer-nav .nav-link.active i {
+    color: #3A9ACC;
+}
+
+.footer-nav i.fa-plus-circle {
+    font-size: 3rem;
+}
+
+/* Popover styles */
+
+.popover-body {
+    background-color: #3A9ACC;
+    padding: 1rem 2rem;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.popover .arrow::after {
+    border-top-color: #3A9ACC;
+    border-bottom-color: #3A9ACC;
+}
+
+
+
+/* Mobile navbar style */
+
+.navbar-mobile .navbar-toggler {
+    border: none;
+    float: right;
+}
+
+.navbar-mobile.bg-light {
+    background-color: #fff !important;
+}
+
+.navbar-mobile {
+    position: absolute;
+    right: 0;
+    z-index: 1;
+}
+
+.navbar-mobile .nav-link.active {
+    color: #3A9ACC !important;
+}
+
+.welcome-message {
+    height: 100%;
+    margin-top: 70px;
+    padding: 30px 20px 0px 20px;
+    background-color: #F2F2F2
+}
+
+/* Desktop navbar style */
+
+.navbar-desktop {
+    background-color: #fff;
+}
+
+.navbar-desktop .nav-link i {
+    color: #999;
+    font-size: 1.3rem;
+}
+
+.navbar-desktop .nav-link i.fa-plus-circle {
+    font-size: 2rem;
+    color: #199ED8;
+}
+
+.menu-profile-img {
+    border-radius: 50%;
+    width: 40px;
+}
+
+.navbar-primary {
+    background-color: #F2F2F2;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    top: 0px;
+    z-index: 1050;
+    width: 200px;
+    overflow: hidden;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+
+.navbar-primary.collapsed {
+    width: 60px;
+}
+
+.navbar-primary.collapsed .nav-label {
+    display: none;
+}
+
+.navbar-primary-menu,
+.navbar-primary-menu li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navbar-primary-menu li a {
+    text-overflow: hidden;
+    white-space: nowrap;
+    text-decoration: none;
+    display: block;
+    padding: 10px 18px;
+    text-align: left;
+    color: #000;
+    font-size: 0.9rem;
+}
+
+.navbar-primary-menu li a i {
+    color: #949494;
+    font-size: 1.1rem;
+}
+
+.btn-expand-collapse i {
+    font-size: 1.5rem !important;
+    color: #0099CC !important;
+}
+
+
+/* Header and footer styles end*/
